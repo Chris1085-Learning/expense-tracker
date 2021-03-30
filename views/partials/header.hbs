@@ -1,12 +1,13 @@
 <header>
   <!-- navigation -->
   <nav class="navbar navbar-light bg-light">
-    <div class="container d-flex justify-content-between">
-      <a class="navbar-brand brandTitle" href="/">
-        老爸的私房錢
+    <div class="container d-flex justify-content-start ">
+      {{#if isIndex}}
+      <a class="text-white px-2 py-2" href="/"><i class="fas fa-arrow-left fa-lg"></i></a>
+      {{/if}}
+      <a class="navbar-brand" href="/">
+        Chris的記帳本
       </a>
     </div>
   </nav>
-
-  <div class="banner"></div>
 </header>
