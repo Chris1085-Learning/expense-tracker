@@ -1,0 +1,30 @@
+header {
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: gray !important;
+}
+.navbar .navbar-brand {
+  color: white;
+  font-weight: 900;
+}
+
+.navbar .navbar-brand:hover {
+  color: black;
+}
+
+select,
+option {
+  text-align-last: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 575px) {
+}

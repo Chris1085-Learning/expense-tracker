@@ -1,0 +1,36 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node models/seeds/moneyTrackerSeeder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris1085/expense-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris1085/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/chris1085/expense-tracker#readme",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.2"
+  }
+}
