@@ -1,16 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-// const Restaurant = require('../../models/restaurant')
+const Record = require('../../models/record')
 
 router.get('/', (req, res) => {
-  const sortName = '排序方式'
-  // Restaurant.find()
-  //   .sort({ _id: 'asc' })
-  //   .lean()
-  //   .then((restaurants) => res.render('index', { restaurants, sortName }))
-  //   .catch((err) => console.log(err))
-  res.render('index')
+  Record.find()
+    .sort({ _id: 'asc' })
+    .lean()
+    .then((Records) => res.render('index', { Records }))
+    .catch((err) => console.log(err))
 })
 
 module.exports = router

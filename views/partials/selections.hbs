@@ -1,0 +1,28 @@
+<div class="d-flex col-12 flex-wrap mb-5">
+    <div class="dropdown text-right col-lg-6 col-12 pb-3">
+      <form action="/expense/category" method="POST" id="sortForm">
+        <select class="custom-select" id="sortSelect" onchange="this.form.submit();" name="method">
+          <option selected disabled>類別</option>
+          <option value="all">全部</option>
+          <option value="_id-asc">家居物業</option>
+          <option value="name-asc">交通出行</option>
+          <option value="name-desc">休閒娛樂</option>
+          <option value="category-asc">餐飲食品</option>
+          <option value="category-desc">其他</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="col-12 col-lg-6 input-group date pb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Choose Date"
+        aria-label="choose date"
+        aria-describedby="date"
+      />
+      <div class="input-group-append">
+        <span class="input-group-text date" id="date"> <i class="far fa-calendar-alt"></i> </span>
+      </div>
+    </div>
+  </div>
